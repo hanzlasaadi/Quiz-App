@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <p class="finished hidden">You are finished</p>
+      <div class="header">
+        <h2 id="question">Question Text</h2>
+        <ul>
+          <li>
+            <input
+              type="radio"
+              id="a"
+              class="options"
+              name="answer"
+              value="a"
+            /><label for="a" id="aText">answer 1</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="b"
+              class="options"
+              name="answer"
+              value="b"
+            /><label for="b" id="bText">answer 2</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="c"
+              class="options"
+              name="answer"
+              value="c"
+            /><label for="c" id="cText">answer 3</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="d"
+              class="options"
+              name="answer"
+              value="d"
+            /><label for="d" id="dText">answer 4</label>
+          </li>
+        </ul>
+      </div>
+      <button id="submitBtn">Submit</button>
+      <button class="hidden refresh" onclick="window.location.reload()">
+        Re-Attempt Quiz
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
